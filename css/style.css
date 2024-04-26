@@ -1,0 +1,87 @@
+*{
+    /* display: flex; */
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    background-color: hsl(60, 71%, 92%);
+    color: hsl(165, 100%, 15%);
+}
+
+header{
+    background-color: hsl(81, 77%, 41%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 760px){
+    header{
+        padding: 2rem;
+        font-size: 2rem;
+    }
+}
+
+* a{
+    color: hsl(165, 100%, 15%);
+    transition: color 0.3s ease;
+}
+
+* a:hover{
+    color: hsl(165, 100%, 30%);
+}
+
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 2rem;
+    max-width: 1000px;
+}
+
+@media (min-width: 760px){
+    .cont{
+        flex-direction: row;
+        margin: 1rem 3rem;
+    }
+    .img, .cont1{
+        flex: 1 1 50%;
+        max-width: 50%;
+    }
+}
+
+.img{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+
+}
+
+.img img{
+    width: 100%;
+    border-radius: 20px;
+    max-width: 500px;
+}
+
+.cont1{
+    margin: 1rem;
+}
+
+.cont1 p{
+    margin: 0.5rem 0rem;
+
+}
+
+footer{
+    background-color: hsl(61, 100%, 42%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
